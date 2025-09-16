@@ -1,6 +1,6 @@
 # 🛒 E-Commerce Customer Satisfaction Score Prediction (Deep Learning Model)
 
-  ![image](https://github.com/VargheseTito/E-Commerce-Customer-Satisfaction-Score-Prediction-DL-Model/assets/110298267/e71b7160-24b3-4c2c-a59b-12b7bceed09b)
+  ![image](https://github.com/VargheseTito/E-Commerce-Customer-Satisfaction-Score-Prediction-DL-Model/<img width="296" height="170" alt="image" src="https://github.com/user-attachments/assets/e4aecc53-7d6a-46ba-8f9b-cd5f8db5f1dd" />)
 
 ## 📌 Project Summary
 
