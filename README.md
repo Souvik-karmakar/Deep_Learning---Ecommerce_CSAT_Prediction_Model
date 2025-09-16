@@ -1,83 +1,158 @@
-# E-Commerce-Customer-Satisfaction-Score-Prediction-DL-Model
+# 🛒 E-Commerce Customer Satisfaction Score Prediction (Deep Learning Model)
 
   ![image](https://github.com/VargheseTito/E-Commerce-Customer-Satisfaction-Score-Prediction-DL-Model/assets/110298267/e71b7160-24b3-4c2c-a59b-12b7bceed09b)
 
+## 📌 Project Summary
 
-E-Commerce Customer Satisfaction Score Prediction Deep Learning Model
+### 🔍 Overview
 
+This project focuses on predicting **Customer Satisfaction (CSAT) scores** using **Deep Learning (Artificial Neural Networks - ANN)**. In the e-commerce industry, understanding customer satisfaction through interactions and feedback is crucial for:
 
-Project Summary
+* Improving service quality
+* Boosting customer retention
+* Driving business growth
 
-Overview
+By leveraging a neural network model, this project aims to forecast CSAT scores accurately from customer interaction data, offering **real-time insights** that businesses can act upon.
 
-This project focuses on predicting Customer Satisfaction (CSAT) scores using Deep Learning Artificial Neural Networks (ANN). In the context of e-commerce, understanding customer satisfaction through their interactions and feedback is crucial for enhancing service quality, customer retention, and overall business growth. By leveraging advanced neural network models, we aim to accurately forecast CSAT scores based on a myriad of interaction-related features, providing actionable insights for service improvement.
+---
 
-Project Background
+### 📖 Project Background
 
-Customer satisfaction in the e-commerce sector is a pivotal metric that influences loyalty, repeat business, and word-of-mouth marketing. Traditionally, companies have relied on direct surveys to gauge customer satisfaction, which can be time-consuming and may not always capture the full spectrum of customer experiences. With the advent of deep learning, it's now possible to predict customer satisfaction scores in real-time, offering a granular view of service performance and identifying areas for immediate improvement.
+Customer satisfaction is a key metric that drives **loyalty, repeat purchases, and referrals**. Traditionally, satisfaction is measured via surveys, but they:
 
-Dataset Overview
+* Take time to collect
+* Capture only a portion of the customer experience
 
-The dataset encompasses customer satisfaction scores over a one-month period on an e-commerce platform named "Shopzilla." It consists of the following features:
+With deep learning, companies can now **predict satisfaction scores dynamically**, helping identify weak points and optimize service delivery **instantly**.
 
-Unique id: Unique identifier for each record (integer).
-Channel name: Name of the customer service channel (object/string).
-Category: Category of the interaction (object/string).
-Sub-category: Subcategory of the interaction (object/string).
-Customer Remarks: Feedback provided by the customer (object/string).
-Order id: Identifier for the order associated with the interaction (integer).
-Order date time: Date and time of the order (datetime).
-Issue reported at: Timestamp when the issue was reported (datetime).
-Issue responded: Timestamp when the issue was responded to (datetime).
-Survey response date: Date of the customer survey response (datetime).
-Customer city: City of the customer (object/string).
-Product category: Category of the product (object/string).
-Item price: Price of the item (float).
-Connected handling time: Time taken to handle the interaction (float).
-Agent name: Name of the customer service agent (object/string).
-Supervisor: Name of the supervisor (object/string).
-Manager: Name of the manager (object/string).
-Tenure Bucket: Bucket categorizing agent tenure (object/string).
-Agent Shift: Shift timing of the agent (object/string).
-CSAT Score: Customer Satisfaction (CSAT) score (integer).
+---
 
-Project Goal
+## 📂 Dataset Overview
 
-The primary goal of this project is to develop a deep learning model that can accurately predict the CSAT scores based on customer interactions and feedback. By doing so, we aim to provide e-commerce businesses with a powerful tool to monitor and enhance customer satisfaction in real-time, thereby improving service quality and fostering customer loyalty.
+The dataset contains **customer interaction records** from an e-commerce platform called **Shopzilla** (1 month).
 
-![Streamlit_App_Screenshot](https://github.com/VargheseTito/E-Commerce-Customer-Satisfaction-Score-Prediction-DL-Model/assets/110298267/1335c22e-9615-4d64-b74c-324cc6f34744)
+**Features include:**
 
+* **Unique ID** – identifier for each record
+* **Channel Name** – service channel used by customer
+* **Category / Sub-category** – type of issue raised
+* **Customer Remarks** – feedback/comments
+* **Order ID & Order Date** – order details
+* **Issue Reported At / Responded At** – timestamps for response
+* **Survey Response Date** – when CSAT survey was answered
+* **Customer City** – city of the customer
+* **Product Category** – product involved
+* **Item Price** – purchase amount
+* **Handling Time** – time taken by agent
+* **Agent Name, Supervisor, Manager** – support staff info
+* **Tenure Bucket** – agent’s experience level
+* **Agent Shift** – shift timing (day/night)
+* **CSAT Score (Target Variable)** – integer satisfaction score (0–4)
 
-Conclusion
+---
 
-Data Overview: The dataset comprises records from the e-commerce industry, focusing on customer service interactions and CSAT scores. It contains 85907 rows and 20 columns, with missing values in several columns such as Customer_city, Product_category, and item_price.
+## 🎯 Project Goal
 
-CSAT Importance: CSAT is a crucial KPI for e-commerce businesses, reflecting customer satisfaction with products, services, and overall experience. Understanding CSAT is vital for driving business success.
+The primary objective is to **predict CSAT scores** using customer interaction data. This will enable:
 
-Variable Insights: The dataset captures detailed information about customer service interactions, including customer feedback, order details, agent information, and timestamps. Understanding these variables provides valuable insights into customer satisfaction drivers.
+* **Proactive service improvement**
+* **Real-time monitoring of satisfaction**
+* **Actionable insights** for management
 
-Exploratory Data Analysis (EDA): EDA aims to gain insights into customer satisfaction patterns. Factors like response time, product category, channel effectiveness, agent tenure, shift timings, and customer feedback are analyzed to uncover potential reasons for CSAT scores.
+---
 
-Response Time Impact: Longer response times correlate with lower CSAT scores, indicating the need for quicker response mechanisms to improve customer satisfaction.
+## 🛠️ Tech Stack
 
-Agent Experience: Agents with longer tenures tend to receive higher CSAT scores, highlighting the importance of experience in delivering satisfactory customer service.
+* **Programming Language:** Python 🐍
+* **Deep Learning Framework:** TensorFlow / Keras
+* **Data Handling & Analysis:** Pandas, NumPy, Scikit-learn
+* **Model Saving/Loading:** Joblib, H5 Format
+* **Frontend:** Streamlit
+* **Visualization:** Matplotlib, Seaborn
+* **Version Control:** Git & GitHub
 
-Shift Timings Influence: CSAT scores vary based on agent shift timings, indicating potential workload or resource issues during specific shifts that need attention.
+---
 
-Customer Satisfaction Analysis: The analysis of CSAT scores reveals that a significant portion of customers (69.4%) rated the service with a score of 5, indicating high satisfaction. However, there is also a notable proportion (15%) of customers who experienced poor service, warranting further investigation into the factors contributing to dissatisfaction.
+## 🧠 Model Architecture
 
-CSAT Score vs. Item Price: A negative correlation between item price and CSAT score suggests that higher-priced items are associated with lower customer satisfaction. This finding underscores the importance of pricing strategies in maintaining high CSAT scores.
+The model is built as a **multi-layer Artificial Neural Network (ANN)**:
 
-Response Time and CSAT Score: Statistical analysis indicates that a mean response time of less than 2 hours is significantly correlated with higher CSAT scores. This underscores the importance of prompt response times in enhancing customer satisfaction.
+* **Input Layer:** Takes in all selected features after preprocessing
+* **Hidden Layers:**
 
-Price Impact on CSAT Score: Hypothesis testing suggests that items priced above a certain threshold do not significantly affect CSAT scores to go below 3. This finding provides insights into pricing strategies and their impact on customer satisfaction.
+  * Dense layers with **ReLU activation**
+  * **Batch Normalization** for stable training
+  * **Dropout layers** to prevent overfitting
+* **Output Layer:**
 
-Data Preprocessing Techniques: Various techniques such as handling missing values, outlier detection, and categorical encoding were employed to ensure data quality and prepare it for analysis.
+  * Dense layer with **Softmax activation** for predicting CSAT scores (0–4)
 
-Feature Engineering: Feature manipulation, selection, and transformation techniques were utilized to create informative features and enhance the predictive power of the model.
+The model is trained with **categorical crossentropy loss**, optimized using the **Adam optimizer**.
 
-Handling Imbalance in Target Variable: The Synthetic Minority Over-sampling Technique (SMOTE) was applied to address the imbalanced class distribution, ensuring robust model training.
+---
 
-Deep Learning Model Development: The development of a deep learning model using a neural network architecture, wrapped into a KerasClassifier, demonstrated promising performance in predicting CSAT scores, with an overall accuracy of approximately 85%.
+## 📊 Model Performance
+
+From evaluation on the test dataset:
+
+* **Overall Accuracy:** \~74%
+* **Per-Class Performance:**
+
+  * CSAT=0 → Precision 0.78, Recall 0.50
+  * CSAT=1 → Precision 0.86, Recall 0.89
+  * CSAT=2 → Precision 0.81, Recall 0.77
+  * CSAT=3 → Precision 0.64, Recall 0.61
+  * CSAT=4 → Precision 0.65, Recall 0.93
+
+✅ **Insight:** The model performs well overall, especially in distinguishing satisfied (1, 2, 4) customers. Some classes like **3 (neutral)** are harder to classify due to overlapping feedback patterns.
+
+---
+
+## 🌐 Streamlit Frontend
+
+The Streamlit app provides **two modes of prediction**:
+
+1. **Sidebar Manual Input** → Enter interaction details manually and get an instant CSAT prediction.
+2. **CSV Upload** → Upload a dataset of multiple records for **batch prediction**.
+
+📸 **Frontend Preview:**
+👉 *(Add screenshots of your Streamlit app here)*
+
+---
+
+## 📦 How to Run
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/CSAT-Prediction-DeepLearning.git
+cd CSAT-Prediction-DeepLearning
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run Streamlit App
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📌 Future Improvements
+
+* Use **transformers for text features** (customer remarks)
+* Apply **hyperparameter tuning** for better performance
+* Deploy as a **cloud-based service** (Azure/AWS/GCP)
+
+---
+
+✍️ **Author:** Souvik Karmakar
+📌 *Full Stack Data Science & AI Certified | Data Analyst | Deep Learning Enthusiast*
+
 
 
