@@ -1,6 +1,7 @@
 # 🛒 E-Commerce Customer Satisfaction Score Prediction (Deep Learning Model)
 
-  ![image](https://github.com/VargheseTito/E-Commerce-Customer-Satisfaction-Score-Prediction-DL-Model/<img width="296" height="170" alt="image" src="https://github.com/user-attachments/assets/e4aecc53-7d6a-46ba-8f9b-cd5f8db5f1dd" />)
+<img width="296" height="170" alt="image" src="https://github.com/user-attachments/assets/e4aecc53-7d6a-46ba-8f9b-cd5f8db5f1dd" />)
+  
 
 ## 📌 Project Summary
 
@@ -116,7 +117,12 @@ The Streamlit app provides **two modes of prediction**:
 2. **CSV Upload** → Upload a dataset of multiple records for **batch prediction**.
 
 📸 **Frontend Preview:**
-👉 *(Add screenshots of your Streamlit app here)*
+
+![Frontend Screenshot](https://github.com/Souvik-karmakar/Deep_Learning---Ecommerce_CSAT_Prediction_Model/blob/main/Streamlit/Project1SS.png)
+![Frontend Screenshot](https://github.com/Souvik-karmakar/Deep_Learning---Ecommerce_CSAT_Prediction_Model/blob/main/Streamlit/ss2_ann.png)
+![Frontend Screenshot](https://github.com/Souvik-karmakar/Deep_Learning---Ecommerce_CSAT_Prediction_Model/blob/main/Streamlit/ss3_ann.png)
+![Frontend Screenshot](https://github.com/Souvik-karmakar/Deep_Learning---Ecommerce_CSAT_Prediction_Model/blob/main/Streamlit/ss4_ann.png)
+
 
 ---
 
